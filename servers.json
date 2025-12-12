@@ -1,58 +1,122 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2025-12-12T00:00:00Z",
+  "updatedAt": "2025-12-12T13:10:00Z",
   "refreshSeconds": 300,
+  "minAppVersion": {
+    "ios": "1.0.0",
+    "android": "1.0.0"
+  },
   "servers": [
     {
       "id": "use-01",
+      "enabled": true,
+      "order": 10,
+      "displayName": "US-East",
       "country": "United States",
       "city": "Ashburn, VA",
-      "flag": "🇺🇸",
-      "host": "5.161.81.225",
-      "port": 51820,
-      "serverPublicKey": "K9a5gvFjwfePZHMsx0BCJnFpwswnH84YJUdHWyXywSE=",
-      "enabled": true
+      "regionCode": "us-east",
+      "flagAsset": "flag_us",
+      "wireguard": {
+        "host": "5.161.81.225",
+        "port": 51820,
+        "serverPublicKey": "K9a5gvFjwfePZHMsx0BCJnFpwswnH84YJUdHWyXywSE=",
+        "clientAddressCidr": "10.8.6.2/32",
+        "allowedIps": ["0.0.0.0/0", "::/0"],
+        "persistentKeepalive": 25,
+        "dns": ["1.1.1.1", "1.0.0.1"]
+      },
+      "tags": ["recommended"],
+      "notes": ""
     },
+
     {
       "id": "usw-01",
+      "enabled": true,
+      "order": 20,
+      "displayName": "US-West",
       "country": "United States",
       "city": "Hillsboro, OR",
-      "flag": "🇺🇸",
-      "host": "5.78.74.25",
-      "port": 51820,
-      "serverPublicKey": "HX2lABfTwf0uKL1Wz0tqIi1ly3waD1myLV1UcJFOZmI=",
-      "enabled": true
+      "regionCode": "us-west",
+      "flagAsset": "flag_us",
+      "wireguard": {
+        "host": "5.78.74.25",
+        "port": 51820,
+        "serverPublicKey": "HX2lABfTwf0uKL1Wz0tqIi1ly3waD1myLV1UcJFOZmI=",
+        "clientAddressCidr": "10.8.5.2/32",
+        "allowedIps": ["0.0.0.0/0", "::/0"],
+        "persistentKeepalive": 25,
+        "dns": ["1.1.1.1", "1.0.0.1"]
+      },
+      "tags": [],
+      "notes": ""
     },
+
     {
       "id": "de-01",
+      "enabled": true,
+      "order": 30,
+      "displayName": "Germany #1",
       "country": "Germany",
-      "city": "Falkenstein #1",
-      "flag": "🇩🇪",
-      "host": "162.55.32.156",
-      "port": 51820,
-      "serverPublicKey": "5bFds4hETFN4X57OmuVG+dk4hKSoZnS9QJitq/Ks9Bw=",
-      "enabled": true
+      "city": "Falkenstein",
+      "regionCode": "de-1",
+      "flagAsset": "flag_germany",
+      "wireguard": {
+        "host": "162.55.32.156",
+        "port": 51820,
+        "serverPublicKey": "5bFds4hETFN4X57OmuVG+dk4hKSoZnS9QJitq/Ks9Bw=",
+        "clientAddressCidr": "10.8.0.2/32",
+        "allowedIps": ["0.0.0.0/0", "::/0"],
+        "persistentKeepalive": 25,
+        "dns": ["1.1.1.1", "1.0.0.1"]
+      },
+      "tags": [],
+      "notes": ""
     },
+
     {
       "id": "de-02",
+      "enabled": true,
+      "order": 40,
+      "displayName": "Germany #2",
       "country": "Germany",
-      "city": "Falkenstein #2",
-      "flag": "🇩🇪",
-      "host": "46.224.98.55",
-      "port": 51820,
-      "serverPublicKey": "s93wv5aKmvRaHBanQGqFAs8lFViSgHmfm9HRZIijPhs=",
-      "enabled": true
+      "city": "Falkenstein",
+      "regionCode": "de-2",
+      "flagAsset": "flag_germany",
+      "wireguard": {
+        "host": "46.224.98.55",
+        "port": 51820,
+        "serverPublicKey": "s93wv5aKmvRaHBanQGqFAs8lFViSgHmfm9HRZIijPhs=",
+        "clientAddressCidr": "10.8.2.2/32",
+        "allowedIps": ["0.0.0.0/0", "::/0"],
+        "persistentKeepalive": 25,
+        "dns": ["1.1.1.1", "1.0.0.1"]
+      },
+      "tags": ["redundancy"],
+      "notes": ""
     },
+
     {
       "id": "fi-01",
+      "enabled": true,
+      "order": 50,
+      "displayName": "Finland",
       "country": "Finland",
       "city": "Helsinki",
-      "flag": "🇫🇮",
-      "host": "77.42.27.52",
-      "port": 51820,
-      "serverPublicKey": "5ZY5exMAhk6zeSeEdjnTGyr3lZyjcMZGFgc5gqkvL2g=",
-      "enabled": true
+      "regionCode": "fi",
+      "flagAsset": "flag_finland",
+      "wireguard": {
+        "host": "77.42.27.52",
+        "port": 51820,
+        "serverPublicKey": "5ZY5exMAhk6zeSeEdjnTGyr3lZyjcMZGFgc5gqkvL2g=",
+        "clientAddressCidr": "10.8.4.2/32",
+        "allowedIps": ["0.0.0.0/0", "::/0"],
+        "persistentKeepalive": 25,
+        "dns": ["1.1.1.1", "1.0.0.1"]
+      },
+      "tags": ["privacy"],
+      "notes": ""
     }
   ]
 }
+
 
