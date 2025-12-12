@@ -1,4 +1,58 @@
 {
-  "version": 1,
-  "servers": []
+  "schemaVersion": 1,
+  "updatedAt": "2025-12-12T00:00:00Z",
+  "refreshSeconds": 300,
+  "servers": [
+    {
+      "id": "use-01",
+      "country": "United States",
+      "city": "Ashburn, VA",
+      "flag": "🇺🇸",
+      "host": "5.161.81.225",
+      "port": 51820,
+      "serverPublicKey": "K9a5gvFjwfePZHMsx0BCJnFpwswnH84YJUdHWyXywSE=",
+      "enabled": true
+    },
+    {
+      "id": "usw-01",
+      "country": "United States",
+      "city": "Hillsboro, OR",
+      "flag": "🇺🇸",
+      "host": "5.78.74.25",
+      "port": 51820,
+      "serverPublicKey": "HX2lABfTwf0uKL1Wz0tqIi1ly3waD1myLV1UcJFOZmI=",
+      "enabled": true
+    },
+    {
+      "id": "de-01",
+      "country": "Germany",
+      "city": "Falkenstein #1",
+      "flag": "🇩🇪",
+      "host": "162.55.32.156",
+      "port": 51820,
+      "serverPublicKey": "5bFds4hETFN4X57OmuVG+dk4hKSoZnS9QJitq/Ks9Bw=",
+      "enabled": true
+    },
+    {
+      "id": "de-02",
+      "country": "Germany",
+      "city": "Falkenstein #2",
+      "flag": "🇩🇪",
+      "host": "46.224.98.55",
+      "port": 51820,
+      "serverPublicKey": "s93wv5aKmvRaHBanQGqFAs8lFViSgHmfm9HRZIijPhs=",
+      "enabled": true
+    },
+    {
+      "id": "fi-01",
+      "country": "Finland",
+      "city": "Helsinki",
+      "flag": "🇫🇮",
+      "host": "77.42.27.52",
+      "port": 51820,
+      "serverPublicKey": "5ZY5exMAhk6zeSeEdjnTGyr3lZyjcMZGFgc5gqkvL2g=",
+      "enabled": true
+    }
+  ]
 }
+
